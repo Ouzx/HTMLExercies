@@ -18,17 +18,17 @@
     <form action="#">
       <div>
         <label for="form-email">Email</label>
-        <input type="email" id="form-email" name="email" />
+        <input required type="email" id="form-email" name="email" />
         <label for="form-pass">Password</label>
-        <input type="password" id="form-pass" name="pass" />
+        <input required type="password" id="form-pass" name="pass" />
       </div>
       <div>
         <label for="form-name">Name and surname</label>
-        <input type="text" id="form-name" name="name" />
+        <input required type="text" id="form-name" name="name" />
         <label for="form-dob">Date of birth</label>
-        <input type="date" id="form-dob" name="dob" />
+        <input required type="date" id="form-dob" name="dob" />
         <label for="form-tel">Phone number</label>
-        <input type="tel" id="form-tel" name="tel" />
+        <input required type="tel" id="form-tel" name="tel" />
       </div>
       <div>
         <label for="form-plan">Plans</label>
@@ -41,17 +41,31 @@
           </optgroup>
         </select>
         <label for="form-pro">PRO plan</label>
-        <input id="form-pro" name="pro" type="checkbox" />
+        <input required id="form-pro" name="pro" type="checkbox" />
       </div>
       <div>
         <label for="form-cc">Credit card number</label>
-        <input id="form-cc" name="cc" type="text" />
+        <input
+          required
+          id="form-cc"
+          name="cc"
+          type="text"
+          maxlength="16"
+          minlength="16"
+        />
         <label for="form-cvc">CVC</label>
-        <input id="form-cvc" name="cvc" type="text" />
+        <input
+          required
+          id="form-cvc"
+          name="cvc"
+          type="text"
+          maxlength="3"
+          minlength="3"
+        />
         <label for="form-exp">Expiration date</label>
-        <input id="form-exp" name="exp" type="date" />
+        <input required id="form-exp" name="exp" type="date" />
         <label for="form-address">Address</label>
-        <input type="text" id="form-address" name="address" />
+        <input required type="text" id="form-address" name="address" />
       </div>
 
       <button type="submit">Submit</button>
