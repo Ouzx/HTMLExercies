@@ -23,11 +23,8 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" required />
 
-      <label for="name">Name</label>
+      <label for="name">Name and Last name</label>
       <input type="text" id="Name" name="name" required />
-
-      <label for="lastname">Last name</label>
-      <input type="text" id="lastname" name="lastname" required />
 
       <label for="date">Date of birth</label>
       <input type="date" id="date" name="date" required />
@@ -37,10 +34,12 @@
 
       <label for="select"> Choose a plan</label>
       <select id="select" name="select" required>
-        <option value="FP">Free Plan</option>
-        <option value="PA">Plan A - 300$</option>
-        <option value="PB">Plan B - 400$</option>
-        <option value="PC">Plan C - 500$</option>
+        <option value="0">Free Plan</option>
+        <optgroup label="Monthly">
+          <option value="300">Plan A - 300$</option>
+          <option value="400">Plan B - 400$</option>
+          <option value="500">Plan C - 500$</option>
+        </optgroup>
       </select>
 
       <label for="pro">Pro Plan</label>
